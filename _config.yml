@@ -16,8 +16,9 @@ resume: true
 resume-external: true
 resume-url: https://google.com/?q=my+resume
 
-url: https://koppl.in/indigo
+#url: https://koppl.in/indigo
 # your url: http://USERNAME.github.io
+url: http://ivanlen.github.io
 
 permalink: /:title/
 
@@ -55,17 +56,12 @@ github: ivanlen
 
 authors:
     johndoe:
-        name: John Doe
-        bio: A Man who travels the world eating noodles
-        external-image: false
-        picture: assets/images/profile.jpg
-        twitter: johndoe
-    jamesfoster:
-        name: James Foster
-        bio: A Man who develops software with coffee
-        external-image: false
-        picture: assets/images/james.jpg
-        twitter: jamesfoster
+        name: Ivan Lengyel
+        bio: I wanted to be a surfer and I ended up being a nerd.
+        external-image: true
+        picture: assets/images/surf_sandia.jpg
+        twitter: ivanlen
+
 
 # do you want a larger site? change the option below
 # options: [normal, large] | default: normal
