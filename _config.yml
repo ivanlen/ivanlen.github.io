@@ -8,7 +8,7 @@ description: A blog about technology and stuff related
 # if it's an external image, update below for true
 # better with square images
 external-image: true
-picture: assets/images/surf_sandia.jpg
+picture: /assets/images/surf_sandia.jpg
 
 # If you want to include your resume, set to true
 # and specify source (external or local).
@@ -53,13 +53,15 @@ github: ivanlen
 # vimeo: myvimeo
 # lanyrd: mylanyrd
 # email: myemail@gmail.com
+scholar: w8vy_PoAAAAJ&hl
 
 authors:
     johndoe:
         name: Ivan Lengyel
         bio: I wanted to be a surfer and I ended up being a nerd.
         external-image: true
-        picture: assets/images/surf_sandia.jpg
+        picture: /assets/images/surf_sandia.jpg
+        #picture: ![image](/assets/images/your-image.jpg)
         twitter: ivanlen
 
 
