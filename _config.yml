@@ -23,7 +23,7 @@ url: http://ivanlen.github.io
 permalink: /:title/
 
 # To enable google analytics, supply your token below
-# analytics-google: 'UA-MYANALYTICS'
+analytics-google: 'UA-135031853-1'
 
 # To enable piwik tracking, supply your url & site ID below
 # analytics-piwik-url: 'piwik.my-host.com'
@@ -38,6 +38,7 @@ disqus:
 #facebook: myfacebook
 twitter: ivanlen
 # google: mygoogle
+googlescholar: w8vy_PoAAAAJ
 # instagram: myinstagram
 # pinterest: mypinterest
 linkedin: ivan-lengyel
@@ -53,7 +54,7 @@ github: ivanlen
 # vimeo: myvimeo
 # lanyrd: mylanyrd
 # email: myemail@gmail.com
-scholar: w8vy_PoAAAAJ&hl
+
 
 authors:
     johndoe:
