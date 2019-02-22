@@ -57,13 +57,14 @@ github: ivanlen
 
 
 authors:
-    johndoe:
+    ivanlen:
         name: Ivan Lengyel
         bio: I wanted to be a surfer and I ended up being a nerd.
         external-image: true
         picture: /assets/images/surf_sandia.jpg
         #picture: ![image](/assets/images/your-image.jpg)
         twitter: ivanlen
+        github: ivanlen
 
 
 # do you want a larger site? change the option below
