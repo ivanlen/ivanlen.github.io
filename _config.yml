@@ -1,9 +1,10 @@
 # main text of home
 name: Ivan Lengyel
 bio: I wanted to be a surfer and I ended up being a nerd.
+personalcomments: theoretical physics, deep neural networks, mental farts
 
 # twitter summary info
-description: A blog about technology and stuff related
+description: Personal webpage of Iván Lengyel
 
 # if it's an external image, update below for true
 # better with square images
