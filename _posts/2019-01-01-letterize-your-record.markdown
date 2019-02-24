@@ -11,6 +11,7 @@ description: "python script to transform audios to nice written messages with le
 category: project
 author: ivanlen
 externalLink: https://github.com/ivanlen/letterize_your_record
+thumbnail: https://github.com/ivanlen/letterize_your_record/raw/master/written_letters/cortazar.jpg?raw=true
 ---
 
 ![Screenshot](/assets/images/greeneyes.jpg)
