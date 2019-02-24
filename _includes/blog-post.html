@@ -1,6 +1,6 @@
 <div class="item {% if post.star %}star{% endif %}">
-    <a href="{{ post.url }}" ><img src="{{ post.thumbnail }}" />
-    <a class="url" href="{{ site.url }}{{ post.url }}">
+    <a class="image-thumb" href="{% if post.externalLink %}{{ post.externalLink }}{% else %}{{ site.url }}{{ post.url }}{% endif %}" ><img src="{{ post.thumbnail }}" width="200" />
+    <a class="url" href="{% if post.externalLink %}{{ post.externalLink }}{% else %}{{ site.url }}{{ post.url }}{% endif %}">
         <aside class="date"><time datetime="{{ post.date | date:"%d-%m-%Y" }}">{{ post.date | date: "%b %d %Y" }}</time></aside>
         <h3 class="title">{{ post.title }}</h3>
     </a>

@@ -8,18 +8,9 @@ layout: page
 
 <p>Somewhere in the middle of physics and computer sciences </p>
 
-<<<<<<< HEAD
 <p>My interests are deep neural networks, machine learning, statistics, stochastic processes, non linear dynamics, biology, gene regulation and numerical simulations.</p>
 
 You can checkout my CV <a href="{{ site.url }}/assets/Lengyel_CV.pdf" target="_blank">here</a>
-
-[You can checkout my CV here](/assets/Lengyel_cv.pdf).
-=======
-<p>My interests lie around deep neural networks, machine learning, statistics, stochastic processes, non linear dynamics, biology, gene regulation and numerical simulations.</p>
-
-You can checkout my CV <a href="{{ site.url }}/assets/Lengyel_CV.pdf" target="_blank">here</a>
-
->>>>>>> bf4c8c84dd1c1fde3666bee9a90671369472dcd1
 
 <!---
 <h2>Skills</h2>
