@@ -4,6 +4,7 @@ layout: post
 date: 2018-02-21 00:01
 image: /assets/images/markdown.jpg
 headerImage: false
+thumbnail: /assets/images/posts/mars_thumb.jpg
 tag:
 - DNNs
 - random
