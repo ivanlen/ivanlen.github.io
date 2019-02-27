@@ -10,7 +10,7 @@ layout: page
 
 <p>My interests lie around deep neural networks, machine learning, statistics, stochastic processes, non linear dynamics, biology, gene regulation and numerical simulations.</p>
 
-You can checkout my CV <a href="{{ site.url }}/assets/Lengyel_CV.pdf" target="_blank">here</a>
+Checkout my CV <a href="{{ site.url }}/assets/Lengyel_CV.pdf" target="_blank">here</a>
 
 <!---
 <h2>Skills</h2>
