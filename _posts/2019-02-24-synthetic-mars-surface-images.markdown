@@ -1,7 +1,7 @@
 ---
 title: "Synthetic Mars' surface images generated with StyleGAN"
 layout: post
-date: 2018-02-21 00:01
+date: 2019-02-21 17:31
 image: /assets/images/markdown.jpg
 headerImage: false
 thumbnail: /assets/posts/mars_thumb.jpg
