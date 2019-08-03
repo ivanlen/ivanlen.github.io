@@ -8,7 +8,7 @@ layout: page
 
 <p>Somewhere between physics and coding.</p>
 
-<p>My interests lie around deep neural networks, machine learning, statistics, stochastic processes, non linear dynamics, biology, gene regulation and numerical simulations.</p>
+<p>My interests lie around deep neural networks, machine learning, statistics, stochastic processes, time series analysis, non linear dynamics, biology, gene regulation and numerical simulations.</p>
 
 Checkout my CV <a href="{{ site.url }}/assets/Lengyel_CV.pdf" target="_blank">here</a>
 
