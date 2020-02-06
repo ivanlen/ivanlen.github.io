@@ -1,28 +1,51 @@
 ---
+<<<<<<< HEAD
 title: "How to generate synthetics Mars' surface images using StyleGAN"
+=======
+title: "[Tutorial] How to generate synthetics images of Mars' surface using StyleGAN"
+>>>>>>> Mars tutorial
 layout: post
 date: 2020-01-30
 # image: /assets/images/markdown.jpg
 headerImage: false
+<<<<<<< HEAD
 tag:
 - DNNs
 - Mars
 - images
 - Neural Networks
 - Generative Adversarial Networks
+=======
+thumbnail: /assets/posts/thumb-low.jpg
+tag:
+  - Generative Adversarial Networks
+  - Deep Neural Networks
+  - images
+  - Mars
+>>>>>>> Mars tutorial
 star: true
 category: blog
 # hidden: true # don't count this post in blog pagination
 projects: true
 author: ivanlen
+<<<<<<< HEAD
 description: Markdown summary with different options
+=======
+description: Tutorial to generate synthetic images using a Generative Adversarial Network
+>>>>>>> Mars tutorial
 ---
 
 ## How to generate synthetics Mars' surface images using StyleGAN
 
+<<<<<<< HEAD
 If we are asked to draw a picture of the surface of Mars, we will probably draw a reddish surface, perhaps with a crater or some other geographical feature. Although the surface may be more complex, and have various colors and distinct shapes, minerals and characteristics, we agree that we can characterize the properties of the surface. If we were good enough drawers and knew the properties of the surface of Mars well enough, we could generate fake images that would even fool a specialist, since the properties of the images would be the same as a real image and the quality of the image would be the same.
 
 Generative Adversarial Networks (GANs) are a neural networks that are composed by two networks: a Generator network -the artist- and a Discriminator network -the specialist- which are trained in a two player game. The generator tries to fool the discriminator by generating real looking images, and the discriminator tries to distinguish between real and fake making the generator to do its best to fool the discriminator. If we iterate over this game with enough fake and real examples, the generator will learn how to synthesize fake images that have the same statistics or properties as the real images.
+=======
+If we are asked to draw a picture of the surface of Mars, we will probably draw a reddish surface, perhaps with a crater or some other geographical feature. Although the surface may be more complex, and have various colors and distinct shapes, minerals and characteristics, we agree that we can characterize the visual properties of the surface. If we were really good enough drawers and knew the properties of the surface of Mars well enough, we could generate fake images that would even fool a specialist, since the properties of the images would be the same as a real image and the quality of the image would be the same.
+
+Generative Adversarial Networks (GANs) are a neural networks that are composed by two networks: a Generator network -the artist- and a Discriminator network -the specialist- which are trained in a two player game. The generator (the artist) tries to fool the discriminator by generating real looking images, and the discriminator (the specialist) tries to distinguish between real and fake making the generator to do its best to fool the discriminator. If we iterate over this game with enough fake and real examples, the generator will learn how to synthesize fake images that have the same statistics or properties as the real images and fool the discriminator.
+>>>>>>> Mars tutorial
 
 In this tutorial we will see how to train a GAN developed by Nvidia, the [StyleGAN](https://arxiv.org/abs/1812.04948), to exploit this idea and generate synthetic images of Mars' surface which look like real ones. The aim of this tutorial is to show hot to train end-to-end a GAN to generate good quality synthetic images and discuss some things of the pipeline. I will assume that you know some basic concepts about machine learning and some basic python stuff.
 
@@ -56,9 +79,18 @@ Now, let's get started!
 
 #### Requirements
 
+<<<<<<< HEAD
 - Linux, MacOs or Windows are supported, but I strongly recommend using a Linux machine.
 - One o more GPUs with that support CUDA at least 8Gb or RAM.
 - 64-bit python (that we are going to install using anaconda)
+=======
+- Linux, MacOs or Windows are supported, but I strongly recommend to use Linux.
+- One o more GPUs with that support CUDA with at least 8Gb of RAM.
+- 64-bit python.
+
+Useful resources:
+- CUDA installation [https://developer.nvidia.com/cuda-downloads](https://developer.nvidia.com/cuda-downloads){:target="_ blank"}
+>>>>>>> Mars tutorial
 
 
 ## Generating the training set
@@ -77,10 +109,15 @@ As in every machine learning pipeline, we need a training dataset to train our G
   <a href="/assets/posts/mars_tutorial/samples/PIA22587.jpg" target="_blank"><img src="/assets/posts/mars_tutorial/samples/PIA22587.jpg" width="32%" /></a> <!-- markup clean_ -->
 </div>
 
+<<<<<<< HEAD
+=======
+I have to say that at the beginning I was not planning to make a _MarsGAN_, however after seeing this images that look almost as a Sci-Fi movie, the first thing that came to my mind was in trying to train something with the images. The rest of the story is this tutorial...
+>>>>>>> Mars tutorial
 
  <!-- To download the images go to the [catalog](https://medium.com/r/?url=https%3A%2F%2Fwww.uahirise.org%2Fcatalog%2F),
  <img src="/assets/posts/mars_tutorial/example-1.png" width="50%" class="image-float-left" alt=""> open an image that you like and then for example [this one](https://www.uahirise.org/ESP_062586_1840), and download the IRB-color non-map image. These are jpg images. -->
 
+<<<<<<< HEAD
  To download the images go to the [catalog](https://medium.com/r/?url=https%3A%2F%2Fwww.uahirise.org%2Fcatalog%2F){:target="_ blank"},  open an image that you like and then for example [this one](https://www.uahirise.org/ESP_062586_1840){:target="_ blank"}, and download the IRB-color non-map image. These are jpg images.
 
 There are different time of images, some of them are wallpapers, some others are very tall ones, and also there are different sizes.
@@ -88,6 +125,14 @@ There are different time of images, some of them are wallpapers, some others are
 Download as many as you can and for the moment do not worry about the different shapes of the images. Then we are going to process the images so they all have the same shape. In this tutorial the images that we are going to generate are of 512x512 px size, so the only consideration that you have to take care is that the smaller dimension of the images must be at least 512px.
 
 So, to have a raw dataset I downloaded 344 jpg images of the database and drop them all in the same folder, in my case is the `/datasets/raw` folder.
+=======
+ To download the images go to the [catalog](https://medium.com/r/?url=https%3A%2F%2Fwww.uahirise.org%2Fcatalog%2F){:target="_ blank"},  open an image that you like and then for example [this one](https://www.uahirise.org/ESP_062586_1840){:target="_ blank"}, and download the IRB-color non-map image, which are all jpg images.
+
+There are different time of images, some of them are wallpapers, some others are very tall ones, and also there are different sizes.
+Download as many as you can and for the moment do not worry about the different shapes of the images. Then we are going to process the images so they all have the same shape. In this tutorial the images that we are going to generate are of 512x512 px size, so the only consideration that you have to take care is that the smaller dimension of the images must be at least 512px.
+
+So, after a couple of downloads my raw dataset consists of 344 jpg images of the database and drop them all in the same folder, in my case is the `/datasets/raw` folder.
+>>>>>>> Mars tutorial
 
 ```bash
 .
@@ -95,6 +140,10 @@ So, to have a raw dataset I downloaded 344 jpg images of the database and drop t
     └── raw
 ```
 
+<<<<<<< HEAD
+=======
+<!--
+>>>>>>> Mars tutorial
 ```bash
 .
 ├── datasets
@@ -116,15 +165,24 @@ So, to have a raw dataset I downloaded 344 jpg images of the database and drop t
     ├── share
     ├── ssl
     └── x86_64-conda_cos6-linux-gnu
+<<<<<<< HEAD
 ```
+=======
+``` -->
+>>>>>>> Mars tutorial
 
 ### Creating a python environment (move before data creating the dataset)!
 
 We will install several packages to be able to train the GAN and some of them need specific versions and we don't want to interact or change the version of other packages. Thus, to keep on we need to setup the python virtual environment.
 > A virtual environment is a tool that helps to keep dependencies required by different projects separate by creating isolated spaces for them that contain per-project dependencies for them.
 
+<<<<<<< HEAD
 Basically using a _virtualenv_ we can install a lots of packages and even broke the environment without damaging other python installations or changing the versions of other packages in other environments.
 I strongly recommend using [(ana)conda](https://docs.anaconda.com/anaconda/){:target="_ blank"}, since it is very easy to install python and setup a [virtual environment with conda](https://docs.conda.io/projects/conda/en/latest/user-guide/concepts/environments.html){:target="_ blank"}. In particular I suggest installing the miniconda version which has the minimal components, and is quite faster.
+=======
+Basically by using a _virtualenv_ we can install a lots of packages and even broke the environment without damaging other python installations or changing the versions of other packages in other environments.
+I strongly recommend using [anaconda](https://docs.anaconda.com/anaconda/){:target="_ blank"} -aka conda-, since it is very easy to install python and setup a [virtual environment with conda](https://docs.conda.io/projects/conda/en/latest/user-guide/concepts/environments.html){:target="_ blank"}. In particular I suggest installing the miniconda version which has the minimal components, and is quite faster.
+>>>>>>> Mars tutorial
 Follow [these steps](https://docs.anaconda.com/anaconda/install/){:target="_ blank"} to install anaconda on your OS or [these steps](https://docs.conda.io/en/latest/miniconda.html){:target="_ blank"} to install miniconda.
 If everything worked find you will be able to use the conda command in your terminal with either of the two installations.
 
@@ -172,6 +230,10 @@ $ conda install tensorflow-gpu==1.14.0
 ```
 
 Now that we have the environment ready we are ready to run some code.
+<<<<<<< HEAD
+=======
+I hope that I dind't forget any package here, but if I did, just conda-install it.
+>>>>>>> Mars tutorial
 
 ### Preparing the dataset
 
@@ -179,7 +241,11 @@ Now that we have the environment ready we are ready to run some code.
 
 If by any change you download a couple of images that are in black and white or have the wrong RGB format, we are going to standardize the dimension of all the images.
 
+<<<<<<< HEAD
 {: .prompt}
+=======
+<!-- {: .prompt}
+>>>>>>> Mars tutorial
 In [1]:
 
 ```python
@@ -203,7 +269,13 @@ for fname in files[:]:
         rgbimg = Image.new("RGB", im.size)
         rgbimg.paste(im)
         rgbimg.save(image_dir + fname)
+<<<<<<< HEAD
 ```
+=======
+``` -->
+
+<script src="https://gist.github.com/ivanlen/b0621ef8658acc8160d0ebabb7495233.js"></script>
+>>>>>>> Mars tutorial
 
 #### Removing the borders
 
@@ -211,7 +283,11 @@ You might find lots of images that have a red border like this one. Although thi
 <img src="/assets/posts/mars_tutorial/red_borders.png" width="50%" class="image-center" alt="Red borders">
 So I will move all 133 the images that contain borders to `'./raw/with_borders/'`. Then I will run this simple script that you can run either on jupyter or as a python script:
 
+<<<<<<< HEAD
 {: .prompt}
+=======
+<!-- {: .prompt}
+>>>>>>> Mars tutorial
 In [1]:
 
 ```python
@@ -272,7 +348,14 @@ for file_path in full_path_valid_files:
     f_name = saving_folder_name + base_name + file_ext
     imc.save(f_name)
 
+<<<<<<< HEAD
 ```
+=======
+``` -->
+
+<script src="https://gist.github.com/ivanlen/8e1dfb31cc72ab1eed700269eb1f9602.js"></script>
+
+>>>>>>> Mars tutorial
 After this procedure the raw images will no longer have the upper border.
 
 Finally we can now add the images that have no border to `'./datasets/curated/'`.
@@ -293,10 +376,17 @@ My whole raw dataset consists of 343 images, and their sizes range from `512px, 
 
 To be able to use the images that we have, first we need to reshape the images into a square shape; in general GANs use square images.
 For this particular tutorial we are going to cut the raw images into images of size `512px x 512 px`.
+<<<<<<< HEAD
 This size will generate high quality images and the training process is not going to be SOOOO long.
 The bigger the images sizes, the larger the dataset that you will need to train the GAN.
 As a starting point I suggest trying `128px x 128px`, with this size you will train considerable faster the GAN compared to `512px x 512 px`.
 I used a NVIDIA Titan V, and I took me 2 days of training for the `128px x 128px` and around 3 weeks for the `512px x 512 px` images. Yes, I know, this sounds like a lot of time, but training GANs takes a lot of time.
+=======
+This size will generate high quality images and the training process is not going to be SOOOO long. If you have lots of GPU or time, you can try generating `1024px x 1024 px`, I am confident that you will have good results.
+The bigger the images sizes, the larger the dataset that you will need to train the GAN.
+As a starting point I suggest trying `128px x 128px`, with this size you will train considerable faster the GAN compared to `512px x 512 px`.
+I used a NVIDIA Titan V, and I took me 2 days of training for the `128px x 128px` and around 12 days for the `512px x 512 px` images. Yes, I know, this sounds like a lot of time, but training GANs takes a lot of time.
+>>>>>>> Mars tutorial
 **It is important to note that whichever size you choose it must be a multiple of 2.**
 Additionally we are also to make some data augmentation.
 
@@ -314,7 +404,11 @@ In other cases, for example faces or landscapes, we have to be more careful beca
 *Data augmentation, or image augmentation, has to keep the properties of the images unchanged under the transformations that we make to the images*.
 
 
+<<<<<<< HEAD
 {: .prompt}
+=======
+<!-- {: .prompt}
+>>>>>>> Mars tutorial
 In [1]:
 
 ```python
@@ -545,7 +639,14 @@ print(len(os.listdir(saving_folder_name)))
 {: .prompt}
 Out [12]:
 
+<<<<<<< HEAD
     20600
+=======
+    20600 -->
+
+<script src="https://gist.github.com/ivanlen/47234ff75e14e2794e25fe7ff2fed4a5.js"></script>
+
+>>>>>>> Mars tutorial
 
 So first if we only cut the images into `(512, 512)` images we obtain `4120` images.
 After the augmentation we in which we keep the original + 4 transformations we have `5 * 4120 = 20600` images. For this dataset this number is enough.
@@ -563,7 +664,11 @@ After the augmentation we in which we keep the original + 4 transformations we h
     ...
 ```    
 
+<<<<<<< HEAD
 For this particular case I wrote my own augmentation scripts because I don't need a huge increase in the data set, and just some simple transformations are enough.
+=======
+I wrote my own augmentation scripts because I don't need a huge increase in the data set, and just some simple transformations are enough.
+>>>>>>> Mars tutorial
 But if you want to see which kind of techniques are use for image augmentation you can checkout this links.
 
 #### Some more data augmentation resources:
@@ -572,9 +677,15 @@ But if you want to see which kind of techniques are use for image augmentation y
 - https://machinelearningmastery.com/how-to-configure-image-data-augmentation-when-training-deep-learning-neural-networks/
 
 
+<<<<<<< HEAD
 These are a couple of snapshots of some of the images after the augmentation procedure.
 
 <a href="/assets/posts/mars_tutorial/reals_mosaic.jpg" target="_blank"><img src="/assets/posts/mars_tutorial/reals_mosaic.jpg" width="99%" class="image-center" alt="Red borders"></a> <!-- markup clean_ -->
+=======
+<!-- These are a couple of snapshots of some of the images after the augmentation procedure.
+
+<a href="/assets/posts/mars_tutorial/reals_mosaic.jpg" target="_blank"><img src="/assets/posts/mars_tutorial/reals_mosaic.jpg" width="99%" class="image-center" alt="Red borders"></a> <!-- markup clean_ --> -->
+>>>>>>> Mars tutorial
 
 So for the moment we have around 20k `512, 512 pxs` images ready to be used to train the GAN.
 
@@ -655,9 +766,15 @@ At the path `datasets/mars` there are going to be several files, each correspond
 The training is progressive, first it starts with low resolution images and then it increases till the final size.
 
 
+<<<<<<< HEAD
 ### Train
 
 #### Setup train.py
+=======
+## Train
+
+### Setup train.py
+>>>>>>> Mars tutorial
 
 Now we are very close to start our training.
 To setup the configuration of the training we need to modify the file `stylegan/train.py`.
@@ -667,7 +784,11 @@ To setup the configuration of the training we need to modify the file `stylegan/
 desc += '-ffhq';     dataset = EasyDict(tfrecord_dir='ffhq');                 train.mirror_augment = True
 ```
 and replacing it with this one
+<<<<<<< HEAD
 ```
+=======
+```python
+>>>>>>> Mars tutorial
 desc += '-mars';     dataset = EasyDict(tfrecord_dir='mars');                 train.mirror_augment = False
 ```
 
@@ -693,11 +814,19 @@ train.total_kimg = 20600
 The other default parameters worked fine for me.
 So now we are ready to go!
 
+<<<<<<< HEAD
 #### Train
 
 The training is progressive. This means that it will start with low size images and it will progressively start to increase the size of the images till it reaches the final size.
 The first epochs with small probably will be fast, but don't get excited to fast, because as soon as the images increase their size you will notice the difference.
 I remind that for 20600 images of 512px it took more than two weeks of training. So, be patient...
+=======
+### Train the GAN
+
+The training is progressive. This means that it will start with low size images and it will progressively start to increase the size of the images till it reaches the final size.
+The first epochs with small probably will finish quickly, but don't get excited to fast, because as soon as the images increase their size you will notice the difference.
+I remind that for 20600 images of 512px it took more than ten days of training. So, be patient...
+>>>>>>> Mars tutorial
 
 To start the training be sure to have active the virtual env that you created for this project and just run
 ```bash
@@ -712,16 +841,31 @@ Every time an epoch has finised you will see a message like this one:
 tick 1     kimg 140.3    lod 6.00  minibatch 128  time 3m 36s       sec/tick 163.2   sec/kimg 1.16    maintenance 52.8   gpumem 3.8
 ```
 
+<<<<<<< HEAD
+=======
+If you think that the training is not running and you have an NVIDIA GPU you can run the command `nvidia-smi` to monitor the state of the GPU.
+
+>>>>>>> Mars tutorial
 #### Checkout the training progress.
 
 The train script save some snapshots during the training to show you the progress of the training.
 You can check them out in `stylegan/results/00001-sgan-mars-1gpu/`.
 You will find network snapshots `network-snapshot-****.pkl` from which you can resume the training, and also synthetic samples `fakes****.png`.
 
+<<<<<<< HEAD
 
 ### Interpolate the latent space
 
 Here you can find a notebook to interpolate the latent space and play with that image_square_resize
+=======
+## Visualize the results and generate synthetic samples
+
+Now that we have a trained GAN, we want to generate synthetic samples and play with the latent space.
+
+### Interpolate the latent space
+
+Here you can find a notebook to interpolate the latent space and play with
+>>>>>>> Mars tutorial
 
 <script src="https://gist.github.com/ivanlen/1c3d426dbe53509b9b99fd883a818bc5.js"></script>
 
@@ -732,6 +876,7 @@ In this notebook you will find how to generate a gif from the synthetic images p
 <script src="https://gist.github.com/ivanlen/e7662d53420f84778c92b77fdc5a4786.js"></script>
 
 
+<<<<<<< HEAD
 
 
 #### Some link
@@ -749,3 +894,27 @@ In this notebook you will find how to generate a gif from the synthetic images p
 
 
 .
+=======
+## Outro
+
+So that's all folks.
+I will try to keep this tutorial updated for new ideas and new code.
+Also Nowadays NVIDIA has released the StyleGAN2, when I have some time I will add the implementation of this new GAN.
+
+#### Some links, references and resources
+
+GANs
+- https://towardsdatascience.com/data-augmentation-for-deep-learning-4fe21d1a4eb9
+- https://keras.io/preprocessing/image/
+- https://machinelearningmastery.com/how-to-configure-image-data-augmentation-when-training-deep-learning-neural-networks/
+- StyleGAN [implementation](https://github.com/NVlabs/stylegan/blob/master/README.md)
+
+Technical stuff
+- CUDA installation [https://developer.nvidia.com/cuda-downloads](https://developer.nvidia.com/cuda-downloads){:target="_ blank"}
+- Anaconda [installation](https://docs.anaconda.com/anaconda/install/){:target="_ blank"} and miniconda [installation](https://docs.conda.io/en/latest/miniconda.html){:target="_ blank"} steps.
+
+Augmentation resources
+- https://towardsdatascience.com/data-augmentation-for-deep-learning-4fe21d1a4eb9
+- https://keras.io/preprocessing/image/
+- https://machinelearningmastery.com/how-to-configure-image-data-augmentation-when-training-deep-learning-neural-networks/
+>>>>>>> Mars tutorial
