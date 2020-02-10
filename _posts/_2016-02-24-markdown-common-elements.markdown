@@ -1,5 +1,5 @@
 ---
-title: "Markdown Common Elements"
+title: "How to generate synthetics Mars' surface images using StyleGAN"
 layout: post
 date: 2016-02-24 22:44
 image: /assets/images/markdown.jpg
