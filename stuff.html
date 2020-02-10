@@ -1,0 +1,19 @@
+---
+layout: page
+title: Stuff
+---
+<section class="list">
+    {% for post in site.posts %}
+        {% if post.stuff %}
+            {% if post.thumbnail %}
+                <a class="image-thumb" href="{% if post.externalLink %}{{ post.externalLink }}{% else %}{{ site.url }}{{ post.url }}{% endif %}" ><img src="{{ post.thumbnail }}" width="200" />
+            {% endif %}
+            <div class="item {% if post.star %}star{% endif %}">
+                <a class="url" href="{% if post.externalLink %}{{ post.externalLink }}{% else %}{{ site.url }}{{ post.url }}{% endif %}">
+                    <aside><time datetime="{{ post.date | date:"%d-%m-%Y" }}">{{ post.date | date: "%d %b %Y" }}</time></aside>
+                    <h3 class="title">{{ post.title }}</h3>
+                </a>
+            </div>
+        {% endif %}
+    {% endfor %}
+</section>
