@@ -1,5 +1,5 @@
 ---
-title: "A simple wrapper of pipreqs that support also jupyter notebooks"
+title: "pipreqsnb - a simple wrapper of pipreqs that support also jupyter notebooks"
 layout: post
 date: 2020-02-28 21:06
 image: /assets/images/markdown.jpg
@@ -10,7 +10,7 @@ tag:
 - jupyter notebook
 category: blog
 author: ivanlen
-description: A simple wrapper of pipreqs that supports jupyter notebooks
+description: pipreqsnb - a simple wrapper of pipreqs that supports jupyter notebooks
 ---
 
 
