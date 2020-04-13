@@ -1,5 +1,5 @@
 ---
-title: "autoencoders safari: simple implementations of three different types of convolutional autoencoders"
+title: "Autoencoders safari: simple implementations of three different types of convolutional autoencoders"
 layout: post
 date: 2020-04-01 12:00
 image: /assets/images/markdown.jpg
@@ -18,14 +18,26 @@ description: convolutional autoencoders simple implementations
 
 
 Recently I was trying to implement a convolutional conditional variational autoencoder.
-#
-It easy to find implementations of different types of autoencoders, but in general I couldn't find a placer where dfferent __convolutional__ autoencoders where implement. 
+There are multiple implementations and resources of different types of autoencoders around, but I couldn't find a resource with multiple implementation of different __convolutional__ autoencoders.
 After reading a couple of articles, tutorials and implementations, I decided to write __[three simple notebooks to show how to implement convolutional autoencoders](https://github.com/ivanlen/autoencoders_safari)__, a convolutional autoencoders __safari__.
 
-There are three notebooks using the MNIST dataset:
-- A simple convolutional autoencoder, with some visualizations of the latent space and the different layers.
-- A convolutional variational autoencoder, with a simple implementation of the reparametrization trick, a generator to draw new samples and some visualizations of the latent space.
-- A convolutional conditional variational autoencoders, with also a simple implementation of a generator to draw samples for a desired class.
+In these three notebooks you will find:
 
-Link:
-https://github.com/ivanlen/autoencoders_safari
+1. A simple convolutional autoencoder, with some visualizations of the latent space and the different layers.
+https://github.com/ivanlen/autoencoders_safari/blob/master/convolutional_autoencoder.ipynb
+
+<img src="/assets/images/aw_safari/CAE_latent.png" alt="latent space" width="300"/>
+
+
+2. A convolutional variational autoencoder, with a simple implementation of the reparametrization trick, a generator to draw new samples and some visualizations of the latent space.
+https://github.com/ivanlen/autoencoders_safari/blob/master/variational_convolutional_autoencoder.ipynb
+
+<img src="/assets/images/aw_safari/CVA_latent.png" alt="generated" width="400"/>
+
+- A convolutional conditional variational autoencoders, with also a simple implementation of a generator to draw samples for a desired class.
+https://github.com/ivanlen/autoencoders_safari/blob/master/conditional_convolutional_variatinoal_autoencoder.ipynb
+
+<img src="/assets/images/aw_safari/CCVA_latent.png" alt="generated" width="300"/>
+
+Link of the repo:
+[https://github.com/ivanlen/autoencoders_safari](https://github.com/ivanlen/autoencoders_safari)
