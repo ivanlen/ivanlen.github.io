@@ -26,18 +26,30 @@ In these three notebooks you will find:
 1. A simple convolutional autoencoder, with some visualizations of the latent space and the different layers.
 https://github.com/ivanlen/autoencoders_safari/blob/master/convolutional_autoencoder.ipynb
 
+<<<<<<< HEAD
 <img src="/assets/images/aw_safari/CAE_latent.png" alt="latent space" width="300"/>
+=======
+<img src="/assets/images/ae_safari/CAE_latent.png" alt="latent space" width="300"/>
+>>>>>>> Link
 
 
 2. A convolutional variational autoencoder, with a simple implementation of the reparametrization trick, a generator to draw new samples and some visualizations of the latent space.
 https://github.com/ivanlen/autoencoders_safari/blob/master/variational_convolutional_autoencoder.ipynb
 
+<<<<<<< HEAD
 <img src="/assets/images/aw_safari/CVA_latent.png" alt="generated" width="400"/>
+=======
+<img src="/assets/images/ae_safari/CVA_latent.png" alt="generated" width="400"/>
+>>>>>>> Link
 
 - A convolutional conditional variational autoencoders, with also a simple implementation of a generator to draw samples for a desired class.
 https://github.com/ivanlen/autoencoders_safari/blob/master/conditional_convolutional_variatinoal_autoencoder.ipynb
 
+<<<<<<< HEAD
 <img src="/assets/images/aw_safari/CCVA_latent.png" alt="generated" width="300"/>
+=======
+<img src="/assets/images/ae_safari/CCVA_latent.png" alt="generated" width="300"/>
+>>>>>>> Link
 
 Link of the repo:
 [https://github.com/ivanlen/autoencoders_safari](https://github.com/ivanlen/autoencoders_safari)
