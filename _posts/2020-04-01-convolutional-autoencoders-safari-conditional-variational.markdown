@@ -24,7 +24,7 @@ After reading a couple of articles, tutorials and implementations, I decided to 
 In these three notebooks you will find:
 
 1. A simple convolutional autoencoder, with some visualizations of the latent space and the different layers.
-[https://github.com/ivanlen/autoencoders_safari/blob/master/convolutional_autoencoder.ipynb](https://github.com/ivanlen/autoencoders_safari/blob/master/convolutional_autoencoder.ipynb)
+[CAE notebook](https://github.com/ivanlen/autoencoders_safari/blob/master/convolutional_autoencoder.ipynb)
 
 <img src="/assets/images/ae_safari/CAE_latent.png"
       alt="latent space"
@@ -32,12 +32,12 @@ In these three notebooks you will find:
 
 
 2. A convolutional variational autoencoder, with a simple implementation of the reparametrization trick, a generator to draw new samples and some visualizations of the latent space.
-[https://github.com/ivanlen/autoencoders_safari/blob/master/variational_convolutional_autoencoder.ipynb](https://github.com/ivanlen/autoencoders_safari/blob/master/variational_convolutional_autoencoder.ipynb)
+[CVAE notebook](https://github.com/ivanlen/autoencoders_safari/blob/master/variational_convolutional_autoencoder.ipynb)
 
 <img src="/assets/images/ae_safari/CVA_latent.png" alt="generated" width="400"/>
 
 - A convolutional conditional variational autoencoders, with also a simple implementation of a generator to draw samples for a desired class.
-[https://github.com/ivanlen/autoencoders_safari/blob/master/conditional_convolutional_variatinoal_autoencoder.ipynb](https://github.com/ivanlen/autoencoders_safari/blob/master/conditional_convolutional_variatinoal_autoencoder.ipynb)
+[CCVAE notebook](https://github.com/ivanlen/autoencoders_safari/blob/master/conditional_convolutional_variatinoal_autoencoder.ipynb)
 
 <img src="/assets/images/ae_safari/CCVA_generator.png" alt="generated" width="400"/>
 
