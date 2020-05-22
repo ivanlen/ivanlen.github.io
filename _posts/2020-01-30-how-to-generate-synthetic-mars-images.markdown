@@ -1,5 +1,5 @@
 ---
-title: "[Tutorial] How to generate synthetics images of Mars' surface using StyleGAN"
+title: "[Tutorial] MarsGan - How to generate synthetics images of Mars' surface using StyleGAN"
 layout: post
 date: 2020-01-30
 # image: /assets/images/markdown.jpg
@@ -10,6 +10,8 @@ tag:
   - Deep Neural Networks
   - images
   - Mars
+  - MarsGan
+link: how-to-generate-synthetic-mars-images
 star: true
 category: blog
 # hidden: true # don't count this post in blog pagination

@@ -1,5 +1,5 @@
 ---
-title: "Synthetic images of Mars surface generated with StyleGAN"
+title: "MarsGan - Synthetic images of Mars surface generated with StyleGAN"
 layout: post
 date: 2019-02-21 17:31
 image: /assets/images/markdown.jpg
