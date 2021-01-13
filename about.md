@@ -6,8 +6,6 @@ layout: page
 
 <h3 class="description">PhD in Physics</h3>
 
-<p>Somewhere between machine learning and physics.</p>
-
 <p>My interests lie around machine learning, deep neural networks, statistics, stochastic processes, time series analysis, non linear dynamics, biology, gene regulatory mechanisms and numerical simulations.</p>
 
 Checkout my CV <a href="{{ site.url }}/assets/Lengyel_CV.pdf" target="_blank">here</a>
