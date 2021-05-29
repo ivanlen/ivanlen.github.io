@@ -1,8 +1,7 @@
 ---
-title: "DNN Adversarial Attacks of Resnet50 1001"
+title: "DNN Adversarial Attacks of ResNet50 1001"
 layout: post
-date: 2020-05-27 18:20
-# image: /assets/images/markdown.jpg
+date: 2021-05-27 18:20
 headerImage: false
 tag:
 - ResNet50
